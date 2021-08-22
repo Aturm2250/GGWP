@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() {
+	int N;
+	printf("Enter number : ");
+	scanf("%d", &N);
+	for (int x = 1; x <= N; x++) {
+		for (int y = 1; y <= N; y++) {
+			if (x == 1 || y == 1 || x == N || y == N)
+			printf("*");
+		else
+			printf(" ");
+		}
+		printf("\n");
+	}
+	return 0;
+}
