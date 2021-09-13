@@ -1,0 +1,28 @@
+#include<stdio.h>
+void factorial(int);
+int main()
+{
+	int num;
+	  printf("\n Enter number : ");
+	  scanf("%d",&num);
+	  factorial(num);
+	  
+	  return 0;
+}
+void factorial(int num)
+{
+	int i, fact = 1;
+	
+	if(num == 0)
+	{
+		printf("Factorial of 0 is 1 (!0 = 1)\n)");
+	}
+	else
+	{
+		for(i =1; i <= num; i++)
+		{
+			fact = fact * i;
+		}
+		printf("\nFactorial of %d = %d", num, fact);
+	}
+}
