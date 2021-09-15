@@ -1,0 +1,25 @@
+  
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+
+
+	int n;
+	printf("Enter number :");
+	scanf("%d", &n);
+
+	for (int m = 1; m <= n; m++)
+	{
+		for (int g = 1; g <= 2*n - 1; g++)
+		{
+			if (g >= n - (m - 1) && g <= n + (m - 1)) { printf("*"); }
+			else
+				printf("1");
+		}
+		printf("\n");
+	}
+		
+
+	
+	return 0;
+  }
